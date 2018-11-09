@@ -89,8 +89,17 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 rustup update stable
 cargo install --git https://github.com/alexcrichton/wasm-gc
-sudo apt install cmake pkg-config libssl-dev git
 ----
+
+You will also need to install the following packages:
+
+ - Linux:
+[source, shell]
+sudo apt install cmake pkg-config libssl-dev git
+
+ - Mac:
+[source, shell]
+brew install cmake pkg-config openssl git
 
 Then, grab the Polkadot source code:
 
